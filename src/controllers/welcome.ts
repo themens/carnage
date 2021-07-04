@@ -15,7 +15,7 @@ export function welcomeScreen() {
     return;
   }
   welcomeShown = true;
-  yo('CARBAGE', { color: 'cyan' });
+  yo('CARNAGE', { color: 'cyan' });
   console.log('\n\n');
 }
 
