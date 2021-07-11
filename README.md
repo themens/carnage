@@ -1,15 +1,18 @@
-# 🕷carnage Bot🕸
+<div align="center">
+  <h1>🕷 Carnage Bot 🕸</h1>
 
-[![npm version](https://img.shields.io/npm/v/carnage-bot.svg?color=green)](https://www.npmjs.com/package/carnage-bot)
-![node](https://img.shields.io/node/v/carnage-bot)
-[![Downloads](https://img.shields.io/npm/dm/carnage-bot.svg)](https://www.npmjs.com/package/carnage-bot)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/themens/carnage.svg)](http://isitmaintained.com/project/themens/carnage 'Average time to resolve an issue')
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/themens/carnage.svg)](http://isitmaintained.com/project/themens/carnage 'Percentage of issues still open')
-<!--<a href="https://discord.gg/qCJ95FVbzR"><img src="https://img.shields.io/discord/772885202351292426?color=blueviolet&label=discord&style=flat" /></a> LINK DO SERVIDOR-->
+  [![npm version](https://img.shields.io/npm/v/carnage-bot.svg?color=green)](https://www.npmjs.com/package/carnage-bot)
+  ![node](https://img.shields.io/node/v/carnage-bot)
+  [![Downloads](https://img.shields.io/npm/dm/carnage-bot.svg)](https://www.npmjs.com/package/carnage-bot)
+  [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/themens/carnage.svg)](http://isitmaintained.com/project/themens/carnage 'Average time to resolve an issue')
+  ![GitHub issues](https://img.shields.io/github/issues-raw/themens/carnage)
+  ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/themens/carnage)
+  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/themens/carnage/master)
+  [![Build Status](https://img.shields.io/github/workflow/status/themens/carnage/build.svg)](https://github.com/themens/carnage/actions)
+  [![Lint Status](https://img.shields.io/github/workflow/status/themens/carnage/lint.svg?label=lint)](https://github.com/themens/carnage/actions)
+  [![release-it](https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80-release--it-e10079.svg)](https://github.com/release-it/release-it)
 
-[![Build Status](https://img.shields.io/github/workflow/status/themens/carnage/build.svg)](https://github.com/themens/carnage/actions)
-[![Lint Status](https://img.shields.io/github/workflow/status/themens/carnage/lint.svg?label=lint)](https://github.com/themens/carnage/actions)
-[![release-it](https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80-release--it-e10079.svg)](https://github.com/release-it/release-it)
+</div>
 
 > carnage is a high-performance system developed with JavaScript to create a bot for WhatsApp, support for creating any interaction, such as customer service, media sending, sentence recognition based on artificial intelligence and all types of design architecture for WhatsApp.
 
@@ -19,40 +22,10 @@
   <a href="https://themens.github.io/carnage">Documentation</a>
 </p>
 
-
-<!--
-## Buy carnage Commercial API (Adquira a API Comercial do carnage)
-Api carnage with complete documentation, all carnage calls in business version and VDM api manager separating each instance in containers, ready for rest calls
-<br> <br>
-|                                                            |     |
-| ---------------------------------------------------------- | --- |
-| Carnage Docker Manager - Manager of API in Containers                                   | ✔   |
-| Full Rest API                                  | ✔   |
-| Balance Load                                  | ✔   |
-| Code is yours                                  | ✔   |
-| No monthly fee                                 | ✔   |
-| Automatic Installer                                 | ✔   |
-| carnage Business                                 | ✔   |
-
- Link de suporte
-## Whatsapp to buy API, Paid Support or Consulting (Whatsapp para adquirir API, Suporte Pago ou Consultoria)
-<a target="_blank" href="https://web.whatsapp.com/send?phone=556181590153&text=I%20want%20access%20to%20API%20carnage" target="_blank"><img title="whatzapp" height="100" width="375" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/WhatsApp_logo.svg/2000px-WhatsApp_logo.svg.png"></a>
-
-
-
-## carnage group support free on Telegram
-<a target="_blank" href="https://t.me/joinchat/G8wxNXidWBo1ZDYx" target="_blank"><img title="Telegram" height="100" width="375" src="https://user-images.githubusercontent.com/66584466/117182238-7d1d8980-adac-11eb-9a70-e32f90c3d4e5.png"></a>
-
-## Need help? Talk to our support carnage-pro!
-
-<a target="_blank" href="https://web.whatsapp.com/send?phone=557599951550&text=Can%20you%20help%20me?" target="_blank"><img title="whatzapp" height="100" width="375" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/WhatsApp_logo.svg/2000px-WhatsApp_logo.svg.png"></a>
--->
-
-
-## 🕷🕷 Functions carnage🕷🕷
+## 🕷🕷 Functions carnage 🕷🕷
 
 |                                                            |     |
-| ---------------------------------------------------------- | --- |
+|---------------------------------------------------------- | --- |
 | 🚻 Automatic QR Refresh                                       | ✔   |
 | 📁 Send **text, image, video, audio and docs**                | ✔   |
 | 👥 Get **contacts, chats, groups, group members, Block List** | ✔   |
@@ -73,13 +46,6 @@ Documentation at https://themens.github.io/carnage/index.html
 ```bash
 > npm i --save carnage-bot
 ```
-<!-- Não sei se esta funcionando
-or for [Nightly releases](https://github.com/themens/carnage/releases/tag/nightly):
-
-```bash
-> npm i --save https://github.com/themens/carnage/releases/download/nightly/carnage-bot-nightly.tgz
-```
--->
 
 ## Getting started
 
