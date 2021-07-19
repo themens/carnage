@@ -24,33 +24,33 @@ export async function checkUpdates(spinnies: Spinnies) {
   if (!updatesChecked) {
     updatesChecked = true;
     spinnies.add('carnage-version-spinner', {
-      text: 'Checking for updates',
+      text: 'Checking for updates'
     });
-    return await checkcarnageVersion(spinnies);
+    return await checkCarnageVersion(spinnies);
   }
 }
 
 /**
  * Checs for a new versoin of carnage and logs
  */
-async function checkcarnageVersion(spinnies: Spinnies) {
+async function checkCarnageVersion(spinnies: Spinnies) {
   spinnies.update('carnage-version-spinner', { text: 'Checking for updates...' });
   try {
     await latestVersion('carnage-bot').then((latest) => {
       if (upToDate(version, latest)) {
         spinnies.succeed('carnage-version-spinner', {
-          text: "You're up to date",
+          text: "You're up to date"
         });
       } else {
         spinnies.succeed('carnage-version-spinner', {
-          text: 'There is a new version available',
+          text: 'There is a new version available'
         });
         logUpdateAvailable(version, latest);
       }
     });
   } catch {
     spinnies.fail('carnage-version-spinner', {
-      text: 'Unable to access: "https://www.npmjs.com", check your internet',
+      text: 'Unable to access: "https://www.npmjs.com", check your internet'
     });
     return false;
   }
@@ -64,7 +64,7 @@ async function checkcarnageVersion(spinnies: Spinnies) {
 function logUpdateAvailable(current: string, latest: string) {
   // prettier-ignore
   const newVersionLog =
-    `There is a new version of ${chalk.bold(`carnage`)} ${chalk.gray(current)} ➜  ${chalk.bold.green(latest)}\n` +
+    `There is a new version of ${chalk.bold(`Carnage`)} ${chalk.gray(current)} ➜  ${chalk.bold.green(latest)}\n` +
     `Update your package by running:\n\n` +
     `${chalk.bold('\>')} ${chalk.blueBright('npm update carnage-bot')}`;
 

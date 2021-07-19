@@ -120,7 +120,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
               a[4].a,
               a[4].b,
               a[5].a,
-              a[5].b,
+              a[5].b
             ];
           else if ('SHA-512' === e)
             b = [
@@ -139,7 +139,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
               a[6].a,
               a[6].b,
               a[7].a,
-              a[7].b,
+              a[7].b
             ];
           else throw Error('Unexpected error in SHA-2 implementation');
           return b;
@@ -828,7 +828,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           4290775857,
           1750603025,
           1694076839,
-          3204075428,
+          3204075428
         ]),
         (d = [
           1779033703,
@@ -838,7 +838,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           1359893119,
           2600822924,
           528734635,
-          1541459225,
+          1541459225
         ]),
         e)
       ) {
@@ -856,7 +856,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             new a(1731405415, b[4]),
             new a(41048885895, b[5]),
             new a(3675008525, b[6]),
-            new a(1203062813, b[7]),
+            new a(1203062813, b[7])
           ];
           break;
         case 'SHA-512':
@@ -868,7 +868,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             new a(d[4], 2917565137),
             new a(d[5], 725511199),
             new a(d[6], 4215389547),
-            new a(d[7], 327033209),
+            new a(d[7], 327033209)
           ];
           break;
         default:
@@ -881,7 +881,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           new a(0, 0),
           new a(0, 0),
           new a(0, 0),
-          new a(0, 0),
+          new a(0, 0)
         ];
     else throw Error('No SHA variants supported');
     return b;
@@ -1130,7 +1130,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     2428436474,
     2756734187,
     3204031479,
-    3329325298,
+    3329325298
   ];
   X = [
     new a(c[0], 3609767458),
@@ -1212,7 +1212,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     new a(1288033470, 3409855158),
     new a(1501505948, 4234509866),
     new a(1607167915, 987167468),
-    new a(1816402316, 1246189591),
+    new a(1816402316, 1246189591)
   ];
   Z = [
     new a(0, 1),
@@ -1238,14 +1238,14 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     new a(2147483648, 2147516545),
     new a(2147483648, 32896),
     new a(0, 2147483649),
-    new a(2147483648, 2147516424),
+    new a(2147483648, 2147516424)
   ];
   Y = [
     [0, 36, 3, 41, 18],
     [1, 44, 10, 45, 2],
     [62, 6, 43, 15, 61],
     [28, 55, 25, 21, 56],
-    [27, 20, 39, 8, 14],
+    [27, 20, 39, 8, 14]
   ];
   'function' === typeof define && define.amd
     ? define(function () {

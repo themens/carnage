@@ -6,8 +6,8 @@ The first thing that you had to do is install the `npm package`:
 npm i --save carnage-bot
 ```
 
-or for [Nightly releases](https://github.com/orkestral/venom/releases/tag/nightly):
+or for [Nightly releases](https://github.com/themens/carnage/releases/tag/nightly):
 
 ```bash
-> npm i --save https://github.com/orkestral/venom/releases/download/nightly/venom-bot-nightly.tgz
+> npm i --save https://github.com/themens/carnage/releases/download/nightly/carnage-bot-nightly.tgz
 ```

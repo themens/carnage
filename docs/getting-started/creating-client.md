@@ -1,6 +1,6 @@
 # Creating a Client
 
-To start using `carnage Bot`, you need to create a file and call the {@link create} method.\
+To start using `Carnage Bot`, you need to create a file and call the {@link create} method.\
 That method returns an `Promise` of {@link Whatsapp}.
 
 ```javascript

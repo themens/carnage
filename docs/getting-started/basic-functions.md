@@ -135,7 +135,7 @@ await client
 
 ### sendFile
 
-Send a file (venom will take care of mime types, just need the path).\
+Send a file (carnage will take care of mime types, just need the path).\
 You can also upload an image using a valid HTTP protocol
 
 ```javascript

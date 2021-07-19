@@ -88,8 +88,9 @@ export function initNewMessagesListener() {
 
             // Remove removable callbacks.
             removeCallbacks.forEach(function (rmCallbackObj) {
-              let callbackIndex =
-                window.WAPI._newMessagesCallbacks.indexOf(rmCallbackObj);
+              let callbackIndex = window.WAPI._newMessagesCallbacks.indexOf(
+                rmCallbackObj
+              );
               window.WAPI._newMessagesCallbacks.splice(callbackIndex, 1);
             });
           }, 1000);
@@ -115,7 +116,7 @@ export function initNewMessagesListener() {
       if (callbackObj.callback !== undefined) {
         callbackObj.callback({
           status: -1,
-          message: 'page will be reloaded, wait and register callback again.',
+          message: 'page will be reloaded, wait and register callback again.'
         });
       }
     });

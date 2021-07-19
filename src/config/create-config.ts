@@ -62,7 +62,7 @@ export interface CreateConfig {
    */
   folderNameToken?: string;
   /**
-   * folder directory tokens, just inside the venom folder, example:  { mkdirFolderToken: '/node_modules', } //will save the tokens folder in the node_modules directory
+   * folder directory tokens, just inside the carnage folder, example:  { mkdirFolderToken: '/node_modules', } //will save the tokens folder in the node_modules directory
    */
   mkdirFolderToken?: string;
   /**
@@ -126,7 +126,7 @@ export interface CreateConfig {
    */
   updatesLog?: boolean;
   /**
-   * Automatically closes the venom-bot only when scanning the QR code (default 60000 miliseconds, if you want to turn it off, assign 0 or false)
+   * Automatically closes the carnage-bot only when scanning the QR code (default 60000 miliseconds, if you want to turn it off, assign 0 or false)
    * @default 60000
    */
   autoClose?: number;
@@ -157,5 +157,5 @@ export const defaultOptions: CreateConfig = {
   updatesLog: true,
   autoClose: 120000,
   createPathFileToken: true,
-  waitForLogin: true,
+  waitForLogin: true
 };

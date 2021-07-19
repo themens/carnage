@@ -280,8 +280,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 topRightFinderPattern: e.topRight,
                 topLeftFinderPattern: e.topLeft,
                 bottomLeftFinderPattern: e.bottomLeft,
-                bottomRightAlignmentPattern: e.alignmentPattern,
-              },
+                bottomRightAlignmentPattern: e.alignmentPattern
+              }
             }
           : null;
       }
@@ -402,38 +402,131 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
         return (e << 1) | o;
       }
       var P = [
-          { bits: 21522, formatInfo: { errorCorrectionLevel: 1, dataMask: 0 } },
-          { bits: 20773, formatInfo: { errorCorrectionLevel: 1, dataMask: 1 } },
-          { bits: 24188, formatInfo: { errorCorrectionLevel: 1, dataMask: 2 } },
-          { bits: 23371, formatInfo: { errorCorrectionLevel: 1, dataMask: 3 } },
-          { bits: 17913, formatInfo: { errorCorrectionLevel: 1, dataMask: 4 } },
-          { bits: 16590, formatInfo: { errorCorrectionLevel: 1, dataMask: 5 } },
-          { bits: 20375, formatInfo: { errorCorrectionLevel: 1, dataMask: 6 } },
-          { bits: 19104, formatInfo: { errorCorrectionLevel: 1, dataMask: 7 } },
-          { bits: 30660, formatInfo: { errorCorrectionLevel: 0, dataMask: 0 } },
-          { bits: 29427, formatInfo: { errorCorrectionLevel: 0, dataMask: 1 } },
-          { bits: 32170, formatInfo: { errorCorrectionLevel: 0, dataMask: 2 } },
-          { bits: 30877, formatInfo: { errorCorrectionLevel: 0, dataMask: 3 } },
-          { bits: 26159, formatInfo: { errorCorrectionLevel: 0, dataMask: 4 } },
-          { bits: 25368, formatInfo: { errorCorrectionLevel: 0, dataMask: 5 } },
-          { bits: 27713, formatInfo: { errorCorrectionLevel: 0, dataMask: 6 } },
-          { bits: 26998, formatInfo: { errorCorrectionLevel: 0, dataMask: 7 } },
-          { bits: 5769, formatInfo: { errorCorrectionLevel: 3, dataMask: 0 } },
-          { bits: 5054, formatInfo: { errorCorrectionLevel: 3, dataMask: 1 } },
-          { bits: 7399, formatInfo: { errorCorrectionLevel: 3, dataMask: 2 } },
-          { bits: 6608, formatInfo: { errorCorrectionLevel: 3, dataMask: 3 } },
-          { bits: 1890, formatInfo: { errorCorrectionLevel: 3, dataMask: 4 } },
+          {
+            bits: 21522,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 0 }
+          },
+          {
+            bits: 20773,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 1 }
+          },
+          {
+            bits: 24188,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 2 }
+          },
+          {
+            bits: 23371,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 3 }
+          },
+          {
+            bits: 17913,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 4 }
+          },
+          {
+            bits: 16590,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 5 }
+          },
+          {
+            bits: 20375,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 6 }
+          },
+          {
+            bits: 19104,
+            formatInfo: { errorCorrectionLevel: 1, dataMask: 7 }
+          },
+          {
+            bits: 30660,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 0 }
+          },
+          {
+            bits: 29427,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 1 }
+          },
+          {
+            bits: 32170,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 2 }
+          },
+          {
+            bits: 30877,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 3 }
+          },
+          {
+            bits: 26159,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 4 }
+          },
+          {
+            bits: 25368,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 5 }
+          },
+          {
+            bits: 27713,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 6 }
+          },
+          {
+            bits: 26998,
+            formatInfo: { errorCorrectionLevel: 0, dataMask: 7 }
+          },
+          {
+            bits: 5769,
+            formatInfo: { errorCorrectionLevel: 3, dataMask: 0 }
+          },
+          {
+            bits: 5054,
+            formatInfo: { errorCorrectionLevel: 3, dataMask: 1 }
+          },
+          {
+            bits: 7399,
+            formatInfo: { errorCorrectionLevel: 3, dataMask: 2 }
+          },
+          {
+            bits: 6608,
+            formatInfo: { errorCorrectionLevel: 3, dataMask: 3 }
+          },
+          {
+            bits: 1890,
+            formatInfo: { errorCorrectionLevel: 3, dataMask: 4 }
+          },
           { bits: 597, formatInfo: { errorCorrectionLevel: 3, dataMask: 5 } },
-          { bits: 3340, formatInfo: { errorCorrectionLevel: 3, dataMask: 6 } },
-          { bits: 2107, formatInfo: { errorCorrectionLevel: 3, dataMask: 7 } },
-          { bits: 13663, formatInfo: { errorCorrectionLevel: 2, dataMask: 0 } },
-          { bits: 12392, formatInfo: { errorCorrectionLevel: 2, dataMask: 1 } },
-          { bits: 16177, formatInfo: { errorCorrectionLevel: 2, dataMask: 2 } },
-          { bits: 14854, formatInfo: { errorCorrectionLevel: 2, dataMask: 3 } },
-          { bits: 9396, formatInfo: { errorCorrectionLevel: 2, dataMask: 4 } },
-          { bits: 8579, formatInfo: { errorCorrectionLevel: 2, dataMask: 5 } },
-          { bits: 11994, formatInfo: { errorCorrectionLevel: 2, dataMask: 6 } },
-          { bits: 11245, formatInfo: { errorCorrectionLevel: 2, dataMask: 7 } },
+          {
+            bits: 3340,
+            formatInfo: { errorCorrectionLevel: 3, dataMask: 6 }
+          },
+          {
+            bits: 2107,
+            formatInfo: { errorCorrectionLevel: 3, dataMask: 7 }
+          },
+          {
+            bits: 13663,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 0 }
+          },
+          {
+            bits: 12392,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 1 }
+          },
+          {
+            bits: 16177,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 2 }
+          },
+          {
+            bits: 14854,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 3 }
+          },
+          {
+            bits: 9396,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 4 }
+          },
+          {
+            bits: 8579,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 5 }
+          },
+          {
+            bits: 11994,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 6 }
+          },
+          {
+            bits: 11245,
+            formatInfo: { errorCorrectionLevel: 2, dataMask: 7 }
+          }
         ],
         v = [
           function (o) {
@@ -459,7 +552,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           },
           function (o) {
             return (((o.y + o.x) % 2) + ((o.y * o.x) % 3)) % 2 == 0;
-          },
+          }
         ];
       function h(o, e, r) {
         for (
@@ -565,7 +658,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
               for (var e = 0; e < o.numBlocks; e++)
                 c.push({
                   numDataCodewords: o.dataCodewordsPerBlock,
-                  codewords: [],
+                  codewords: []
                 }),
                   (s += o.dataCodewordsPerBlock + t.ecCodewordsPerBlock);
             }),
@@ -715,7 +808,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
         '-',
         '.',
         '/',
-        ':',
+        ':'
       ];
       function P(o, e) {
         for (
@@ -786,11 +879,20 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           if (l === m.Terminator) return n;
           if (l === m.ECI)
             0 === a.readBits(1)
-              ? n.chunks.push({ type: C.ECI, assignmentNumber: a.readBits(7) })
+              ? n.chunks.push({
+                  type: C.ECI,
+                  assignmentNumber: a.readBits(7)
+                })
               : 0 === a.readBits(1)
-              ? n.chunks.push({ type: C.ECI, assignmentNumber: a.readBits(14) })
+              ? n.chunks.push({
+                  type: C.ECI,
+                  assignmentNumber: a.readBits(14)
+                })
               : 0 === a.readBits(1)
-              ? n.chunks.push({ type: C.ECI, assignmentNumber: a.readBits(21) })
+              ? n.chunks.push({
+                  type: C.ECI,
+                  assignmentNumber: a.readBits(21)
+                })
               : n.chunks.push({ type: C.ECI, assignmentNumber: -1 });
           else if (l === m.Numeric) {
             var i = w(a, d);
@@ -7895,7 +7997,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           60065: 36953,
           60066: 29796,
           60067: 20956,
-          60068: 29081,
+          60068: 29081
         });
     },
     function (o, e, r) {
@@ -8000,21 +8102,21 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 7,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 19 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 19 }]
               },
               {
                 ecCodewordsPerBlock: 10,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 16 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 16 }]
               },
               {
                 ecCodewordsPerBlock: 13,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 13 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 13 }]
               },
               {
                 ecCodewordsPerBlock: 17,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 9 }],
-              },
-            ],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 9 }]
+              }
+            ]
           },
           {
             infoBits: null,
@@ -8023,21 +8125,21 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 10,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 34 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 34 }]
               },
               {
                 ecCodewordsPerBlock: 16,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 28 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 28 }]
               },
               {
                 ecCodewordsPerBlock: 22,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 22 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 22 }]
               },
               {
                 ecCodewordsPerBlock: 28,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 16 }],
-              },
-            ],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 16 }]
+              }
+            ]
           },
           {
             infoBits: null,
@@ -8046,21 +8148,21 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 15,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 55 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 55 }]
               },
               {
                 ecCodewordsPerBlock: 26,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 44 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 44 }]
               },
               {
                 ecCodewordsPerBlock: 18,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 17 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 17 }]
               },
               {
                 ecCodewordsPerBlock: 22,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 13 }],
-              },
-            ],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 13 }]
+              }
+            ]
           },
           {
             infoBits: null,
@@ -8069,21 +8171,21 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 20,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 80 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 80 }]
               },
               {
                 ecCodewordsPerBlock: 18,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 32 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 32 }]
               },
               {
                 ecCodewordsPerBlock: 26,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 24 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 24 }]
               },
               {
                 ecCodewordsPerBlock: 16,
-                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 9 }],
-              },
-            ],
+                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 9 }]
+              }
+            ]
           },
           {
             infoBits: null,
@@ -8092,27 +8194,27 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 26,
-                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 108 }],
+                ecBlocks: [{ numBlocks: 1, dataCodewordsPerBlock: 108 }]
               },
               {
                 ecCodewordsPerBlock: 24,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 43 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 43 }]
               },
               {
                 ecCodewordsPerBlock: 18,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 16 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 16 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 11 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 12 },
-                ],
-              },
-            ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 12 }
+                ]
+              }
+            ]
           },
           {
             infoBits: null,
@@ -8121,21 +8223,21 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 18,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 68 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 68 }]
               },
               {
                 ecCodewordsPerBlock: 16,
-                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 27 }],
+                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 27 }]
               },
               {
                 ecCodewordsPerBlock: 24,
-                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 19 }],
+                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 19 }]
               },
               {
                 ecCodewordsPerBlock: 28,
-                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 15 }],
-              },
-            ],
+                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 15 }]
+              }
+            ]
           },
           {
             infoBits: 31892,
@@ -8144,27 +8246,27 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 20,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 78 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 78 }]
               },
               {
                 ecCodewordsPerBlock: 18,
-                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 31 }],
+                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 31 }]
               },
               {
                 ecCodewordsPerBlock: 18,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 14 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 15 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 15 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 13 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 14 },
-                ],
-              },
-            ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 14 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 34236,
@@ -8173,30 +8275,30 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 24,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 97 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 97 }]
               },
               {
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 38 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 39 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 39 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 18 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 19 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 19 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 14 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 15 },
-                ],
-              },
-            ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 15 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 39577,
@@ -8205,30 +8307,30 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 30,
-                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 116 }],
+                ecBlocks: [{ numBlocks: 2, dataCodewordsPerBlock: 116 }]
               },
               {
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 36 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 37 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 37 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 20,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 16 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 17 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 17 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 12 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 13 },
-                ],
-              },
-            ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 13 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 42195,
@@ -8239,31 +8341,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 18,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 68 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 69 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 69 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 43 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 44 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 44 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 6, dataCodewordsPerBlock: 19 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 20 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 20 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 6, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 48118,
@@ -8272,30 +8374,30 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 20,
-                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 81 }],
+                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 81 }]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 1, dataCodewordsPerBlock: 50 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 51 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 51 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 22 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 23 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 23 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 12 },
-                  { numBlocks: 8, dataCodewordsPerBlock: 13 },
-                ],
-              },
-            ],
+                  { numBlocks: 8, dataCodewordsPerBlock: 13 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 51042,
@@ -8306,31 +8408,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 92 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 93 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 93 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 6, dataCodewordsPerBlock: 36 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 37 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 37 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 20 },
-                  { numBlocks: 6, dataCodewordsPerBlock: 21 },
-                ],
+                  { numBlocks: 6, dataCodewordsPerBlock: 21 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 7, dataCodewordsPerBlock: 14 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 15 },
-                ],
-              },
-            ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 15 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 55367,
@@ -8339,30 +8441,30 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 26,
-                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 107 }],
+                ecBlocks: [{ numBlocks: 4, dataCodewordsPerBlock: 107 }]
               },
               {
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 8, dataCodewordsPerBlock: 37 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 38 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 38 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 8, dataCodewordsPerBlock: 20 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 21 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 21 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 12, dataCodewordsPerBlock: 11 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 12 },
-                ],
-              },
-            ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 12 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 58893,
@@ -8373,31 +8475,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 115 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 116 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 116 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 40 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 41 },
-                ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 41 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 20,
                 ecBlocks: [
                   { numBlocks: 11, dataCodewordsPerBlock: 16 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 17 },
-                ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 17 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 11, dataCodewordsPerBlock: 12 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 13 },
-                ],
-              },
-            ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 13 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 63784,
@@ -8408,31 +8510,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 22,
                 ecBlocks: [
                   { numBlocks: 5, dataCodewordsPerBlock: 87 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 88 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 88 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 5, dataCodewordsPerBlock: 41 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 42 },
-                ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 42 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 5, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 11, dataCodewordsPerBlock: 12 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 13 },
-                ],
-              },
-            ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 13 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 68472,
@@ -8443,31 +8545,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 5, dataCodewordsPerBlock: 98 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 99 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 99 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 7, dataCodewordsPerBlock: 45 },
-                  { numBlocks: 3, dataCodewordsPerBlock: 46 },
-                ],
+                  { numBlocks: 3, dataCodewordsPerBlock: 46 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
                 ecBlocks: [
                   { numBlocks: 15, dataCodewordsPerBlock: 19 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 20 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 20 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 13, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 13, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 70749,
@@ -8478,31 +8580,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 1, dataCodewordsPerBlock: 107 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 108 },
-                ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 108 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 10, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 1, dataCodewordsPerBlock: 22 },
-                  { numBlocks: 15, dataCodewordsPerBlock: 23 },
-                ],
+                  { numBlocks: 15, dataCodewordsPerBlock: 23 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 14 },
-                  { numBlocks: 17, dataCodewordsPerBlock: 15 },
-                ],
-              },
-            ],
+                  { numBlocks: 17, dataCodewordsPerBlock: 15 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 76311,
@@ -8513,31 +8615,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 5, dataCodewordsPerBlock: 120 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 121 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 121 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 9, dataCodewordsPerBlock: 43 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 44 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 44 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 17, dataCodewordsPerBlock: 22 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 23 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 23 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 14 },
-                  { numBlocks: 19, dataCodewordsPerBlock: 15 },
-                ],
-              },
-            ],
+                  { numBlocks: 19, dataCodewordsPerBlock: 15 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 79154,
@@ -8548,31 +8650,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 113 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 114 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 114 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 44 },
-                  { numBlocks: 11, dataCodewordsPerBlock: 45 },
-                ],
+                  { numBlocks: 11, dataCodewordsPerBlock: 45 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 17, dataCodewordsPerBlock: 21 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 22 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 22 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 9, dataCodewordsPerBlock: 13 },
-                  { numBlocks: 16, dataCodewordsPerBlock: 14 },
-                ],
-              },
-            ],
+                  { numBlocks: 16, dataCodewordsPerBlock: 14 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 84390,
@@ -8583,31 +8685,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 107 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 108 },
-                ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 108 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 41 },
-                  { numBlocks: 13, dataCodewordsPerBlock: 42 },
-                ],
+                  { numBlocks: 13, dataCodewordsPerBlock: 42 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 15, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 15, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 10, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 10, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 87683,
@@ -8618,28 +8720,28 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 116 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 117 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 117 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 26,
-                ecBlocks: [{ numBlocks: 17, dataCodewordsPerBlock: 42 }],
+                ecBlocks: [{ numBlocks: 17, dataCodewordsPerBlock: 42 }]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 17, dataCodewordsPerBlock: 22 },
-                  { numBlocks: 6, dataCodewordsPerBlock: 23 },
-                ],
+                  { numBlocks: 6, dataCodewordsPerBlock: 23 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 19, dataCodewordsPerBlock: 16 },
-                  { numBlocks: 6, dataCodewordsPerBlock: 17 },
-                ],
-              },
-            ],
+                  { numBlocks: 6, dataCodewordsPerBlock: 17 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 92361,
@@ -8650,25 +8752,25 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 111 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 112 },
-                ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 112 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
-                ecBlocks: [{ numBlocks: 17, dataCodewordsPerBlock: 46 }],
+                ecBlocks: [{ numBlocks: 17, dataCodewordsPerBlock: 46 }]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 7, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 16, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 16, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 24,
-                ecBlocks: [{ numBlocks: 34, dataCodewordsPerBlock: 13 }],
-              },
-            ],
+                ecBlocks: [{ numBlocks: 34, dataCodewordsPerBlock: 13 }]
+              }
+            ]
           },
           {
             infoBits: 96236,
@@ -8679,31 +8781,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 121 },
-                  { numBlocks: 5, dataCodewordsPerBlock: 122 },
-                ],
+                  { numBlocks: 5, dataCodewordsPerBlock: 122 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 47 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 48 },
-                ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 48 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 11, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 16, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 102084,
@@ -8714,31 +8816,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 6, dataCodewordsPerBlock: 117 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 118 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 118 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 6, dataCodewordsPerBlock: 45 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 46 },
-                ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 46 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 11, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 16, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 16, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 30, dataCodewordsPerBlock: 16 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 17 },
-                ],
-              },
-            ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 17 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 102881,
@@ -8749,31 +8851,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 26,
                 ecBlocks: [
                   { numBlocks: 8, dataCodewordsPerBlock: 106 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 107 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 107 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 8, dataCodewordsPerBlock: 47 },
-                  { numBlocks: 13, dataCodewordsPerBlock: 48 },
-                ],
+                  { numBlocks: 13, dataCodewordsPerBlock: 48 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 7, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 22, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 22, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 22, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 13, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 13, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 110507,
@@ -8784,31 +8886,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 10, dataCodewordsPerBlock: 114 },
-                  { numBlocks: 2, dataCodewordsPerBlock: 115 },
-                ],
+                  { numBlocks: 2, dataCodewordsPerBlock: 115 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 19, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 28, dataCodewordsPerBlock: 22 },
-                  { numBlocks: 6, dataCodewordsPerBlock: 23 },
-                ],
+                  { numBlocks: 6, dataCodewordsPerBlock: 23 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 33, dataCodewordsPerBlock: 16 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 17 },
-                ],
-              },
-            ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 17 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 110734,
@@ -8819,31 +8921,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 8, dataCodewordsPerBlock: 122 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 123 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 123 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 22, dataCodewordsPerBlock: 45 },
-                  { numBlocks: 3, dataCodewordsPerBlock: 46 },
-                ],
+                  { numBlocks: 3, dataCodewordsPerBlock: 46 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 8, dataCodewordsPerBlock: 23 },
-                  { numBlocks: 26, dataCodewordsPerBlock: 24 },
-                ],
+                  { numBlocks: 26, dataCodewordsPerBlock: 24 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 12, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 28, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 28, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 117786,
@@ -8854,31 +8956,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 117 },
-                  { numBlocks: 10, dataCodewordsPerBlock: 118 },
-                ],
+                  { numBlocks: 10, dataCodewordsPerBlock: 118 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 3, dataCodewordsPerBlock: 45 },
-                  { numBlocks: 23, dataCodewordsPerBlock: 46 },
-                ],
+                  { numBlocks: 23, dataCodewordsPerBlock: 46 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 31, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 31, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 11, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 31, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 31, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 119615,
@@ -8889,31 +8991,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 7, dataCodewordsPerBlock: 116 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 117 },
-                ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 117 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 21, dataCodewordsPerBlock: 45 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 46 },
-                ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 46 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 1, dataCodewordsPerBlock: 23 },
-                  { numBlocks: 37, dataCodewordsPerBlock: 24 },
-                ],
+                  { numBlocks: 37, dataCodewordsPerBlock: 24 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 19, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 26, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 26, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 126325,
@@ -8924,31 +9026,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 5, dataCodewordsPerBlock: 115 },
-                  { numBlocks: 10, dataCodewordsPerBlock: 116 },
-                ],
+                  { numBlocks: 10, dataCodewordsPerBlock: 116 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 19, dataCodewordsPerBlock: 47 },
-                  { numBlocks: 10, dataCodewordsPerBlock: 48 },
-                ],
+                  { numBlocks: 10, dataCodewordsPerBlock: 48 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 15, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 25, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 25, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 23, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 25, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 25, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 127568,
@@ -8959,31 +9061,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 13, dataCodewordsPerBlock: 115 },
-                  { numBlocks: 3, dataCodewordsPerBlock: 116 },
-                ],
+                  { numBlocks: 3, dataCodewordsPerBlock: 116 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 29, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 29, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 42, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 23, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 28, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 28, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 133589,
@@ -8992,30 +9094,30 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             errorCorrectionLevels: [
               {
                 ecCodewordsPerBlock: 30,
-                ecBlocks: [{ numBlocks: 17, dataCodewordsPerBlock: 115 }],
+                ecBlocks: [{ numBlocks: 17, dataCodewordsPerBlock: 115 }]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 10, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 23, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 23, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 10, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 35, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 35, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 19, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 35, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 35, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 136944,
@@ -9026,31 +9128,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 17, dataCodewordsPerBlock: 115 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 116 },
-                ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 116 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 14, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 21, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 21, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 29, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 19, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 19, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 11, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 46, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 46, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 141498,
@@ -9061,31 +9163,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 13, dataCodewordsPerBlock: 115 },
-                  { numBlocks: 6, dataCodewordsPerBlock: 116 },
-                ],
+                  { numBlocks: 6, dataCodewordsPerBlock: 116 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 14, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 23, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 23, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 44, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 59, dataCodewordsPerBlock: 16 },
-                  { numBlocks: 1, dataCodewordsPerBlock: 17 },
-                ],
-              },
-            ],
+                  { numBlocks: 1, dataCodewordsPerBlock: 17 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 145311,
@@ -9096,31 +9198,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 12, dataCodewordsPerBlock: 121 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 122 },
-                ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 122 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 12, dataCodewordsPerBlock: 47 },
-                  { numBlocks: 26, dataCodewordsPerBlock: 48 },
-                ],
+                  { numBlocks: 26, dataCodewordsPerBlock: 48 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 39, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 22, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 41, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 41, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 150283,
@@ -9131,31 +9233,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 6, dataCodewordsPerBlock: 121 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 122 },
-                ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 122 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 6, dataCodewordsPerBlock: 47 },
-                  { numBlocks: 34, dataCodewordsPerBlock: 48 },
-                ],
+                  { numBlocks: 34, dataCodewordsPerBlock: 48 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 46, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 10, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 10, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 2, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 64, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 64, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 152622,
@@ -9166,31 +9268,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 17, dataCodewordsPerBlock: 122 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 123 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 123 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 29, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 49, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 10, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 10, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 24, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 46, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 46, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 158308,
@@ -9201,31 +9303,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 4, dataCodewordsPerBlock: 122 },
-                  { numBlocks: 18, dataCodewordsPerBlock: 123 },
-                ],
+                  { numBlocks: 18, dataCodewordsPerBlock: 123 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 13, dataCodewordsPerBlock: 46 },
-                  { numBlocks: 32, dataCodewordsPerBlock: 47 },
-                ],
+                  { numBlocks: 32, dataCodewordsPerBlock: 47 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 48, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 14, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 14, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 42, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 32, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 32, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 161089,
@@ -9236,31 +9338,31 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 20, dataCodewordsPerBlock: 117 },
-                  { numBlocks: 4, dataCodewordsPerBlock: 118 },
-                ],
+                  { numBlocks: 4, dataCodewordsPerBlock: 118 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 40, dataCodewordsPerBlock: 47 },
-                  { numBlocks: 7, dataCodewordsPerBlock: 48 },
-                ],
+                  { numBlocks: 7, dataCodewordsPerBlock: 48 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 43, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 22, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 22, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 10, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 67, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
+                  { numBlocks: 67, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
           },
           {
             infoBits: 167017,
@@ -9271,32 +9373,32 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 19, dataCodewordsPerBlock: 118 },
-                  { numBlocks: 6, dataCodewordsPerBlock: 119 },
-                ],
+                  { numBlocks: 6, dataCodewordsPerBlock: 119 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 28,
                 ecBlocks: [
                   { numBlocks: 18, dataCodewordsPerBlock: 47 },
-                  { numBlocks: 31, dataCodewordsPerBlock: 48 },
-                ],
+                  { numBlocks: 31, dataCodewordsPerBlock: 48 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 34, dataCodewordsPerBlock: 24 },
-                  { numBlocks: 34, dataCodewordsPerBlock: 25 },
-                ],
+                  { numBlocks: 34, dataCodewordsPerBlock: 25 }
+                ]
               },
               {
                 ecCodewordsPerBlock: 30,
                 ecBlocks: [
                   { numBlocks: 20, dataCodewordsPerBlock: 15 },
-                  { numBlocks: 61, dataCodewordsPerBlock: 16 },
-                ],
-              },
-            ],
-          },
+                  { numBlocks: 61, dataCodewordsPerBlock: 16 }
+                ]
+              }
+            ]
+          }
         ]);
     },
     function (o, e, r) {
@@ -9316,7 +9418,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             a23: 0,
             a31: o.x,
             a32: o.y,
-            a33: 1,
+            a33: 1
           };
         var a = e.x - r.x,
           d = t.x - r.x,
@@ -9334,7 +9436,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           a23: k,
           a31: o.x,
           a32: o.y,
-          a33: 1,
+          a33: 1
         };
       }
       e.extract = function (o, e) {
@@ -9360,7 +9462,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 a23: a.a13 * a.a21 - a.a11 * a.a23,
                 a31: a.a21 * a.a32 - a.a22 * a.a31,
                 a32: a.a12 * a.a31 - a.a11 * a.a32,
-                a33: a.a11 * a.a22 - a.a12 * a.a21,
+                a33: a.a11 * a.a22 - a.a12 * a.a21
               }),
             i = P(e.topLeft, e.topRight, e.alignmentPattern, e.bottomLeft),
             B =
@@ -9374,14 +9476,14 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 a23: d.a13 * n.a21 + d.a23 * n.a22 + d.a33 * n.a23,
                 a31: d.a11 * n.a31 + d.a21 * n.a32 + d.a31 * n.a33,
                 a32: d.a12 * n.a31 + d.a22 * n.a32 + d.a32 * n.a33,
-                a33: d.a13 * n.a31 + d.a23 * n.a32 + d.a33 * n.a33,
+                a33: d.a13 * n.a31 + d.a23 * n.a32 + d.a33 * n.a33
               }),
             k = w.BitMatrix.createEmpty(e.dimension, e.dimension),
             u = function (o, e) {
               var r = B.a13 * o + B.a23 * e + B.a33;
               return {
                 x: (B.a11 * o + B.a21 * e + B.a31) / r,
-                y: (B.a12 * o + B.a22 * e + B.a32) / r,
+                y: (B.a12 * o + B.a22 * e + B.a32) / r
               };
             },
             C = 0;
@@ -9475,7 +9577,10 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
             c = _(o, { x: o.x, y: -1 }, r, e.length),
             s = _(
               o,
-              { x: Math.max(0, o.x - o.y) - 1, y: Math.max(0, o.y - o.x) - 1 },
+              {
+                x: Math.max(0, o.x - o.y) - 1,
+                y: Math.max(0, o.y - o.x) - 1
+              },
               r,
               e.length
             ),
@@ -9483,7 +9588,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
               o,
               {
                 x: Math.min(r.width, o.x + o.y) + 1,
-                y: Math.min(r.height, o.y + o.x) + 1,
+                y: Math.min(r.height, o.y + o.x) + 1
               },
               r,
               e.length
@@ -9631,7 +9736,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
               var t = [
                   o.top.endX - o.top.startX,
                   o.bottom.endX - o.bottom.startX,
-                  o.bottom.y - o.top.y + 1,
+                  o.bottom.y - o.top.y + 1
                 ],
                 c = j(t) / t.length;
               return {
@@ -9642,7 +9747,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 ),
                 x: e,
                 y: r,
-                size: c,
+                size: c
               };
             }
           })
@@ -9663,7 +9768,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                   x: o.x,
                   y: o.y,
                   score: o.score + Math.pow(o.size - e.size, 2) / e.size,
-                  size: o.size,
+                  size: o.size
                 };
               })
               .sort(function (o, e) {
@@ -9760,7 +9865,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                 var t = [
                   o.top.endX - o.top.startX,
                   o.bottom.endX - o.bottom.startX,
-                  o.bottom.y - o.top.y + 1,
+                  o.bottom.y - o.top.y + 1
                 ];
                 j(t);
                 return {
@@ -9768,7 +9873,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                   y: r,
                   score:
                     R({ x: Math.floor(e), y: Math.floor(r) }, [1, 1, 1], f) +
-                    E({ x: e, y: r }, S),
+                    E({ x: e, y: r }, S)
                 };
               }
             })
@@ -9784,10 +9889,10 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
           bottomLeft: { x: M.x, y: M.y },
           dimension: p,
           topLeft: { x: x.x, y: x.y },
-          topRight: { x: g.x, y: g.y },
+          topRight: { x: g.x, y: g.y }
         };
       };
-    },
+    }
   ]),
   (t.c = c),
   (t.d = function (o, e, r) {
