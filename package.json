@@ -1,7 +1,7 @@
 {
   "name": "carnage-bot",
-  "version": "1.0.2",
-  "description": "carnage is a high-performance system developed with JavaScript to create a bot for WhatsApp, support for creating any interaction, such as customer service, media sending, sentence recognition based on artificial intelligence and all types of design architecture for WhatsApp. ",
+  "version": "1.0.3",
+  "description": "Carnage is a high-performance system developed with JavaScript to create a bot for WhatsApp, support for creating any interaction, such as customer service, media sending, sentence recognition based on artificial intelligence and all types of design architecture for WhatsApp. ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,7 +9,7 @@
     "build:docs": "typedoc && git add docs/*",
     "build:jsQR": "cd src/lib/jsQR/ && gulp",
     "build:middleware": "cd src/lib/middleware/ && webpack",
-    "build:carnage": "tsc",
+    "build:venom": "tsc",
     "build:wapi": "cd src/lib/wapi/ && webpack",
     "build": "npm run build:wapi && npm run build:middleware && npm run build:jsQR && npm run build:counter && npm run build:carnage",
     "changelog:last": "conventional-changelog -p angular -r 2",
@@ -53,7 +53,7 @@
     "automatization",
     "puppeteer"
   ],
-  "author": "Themens",
+  "author": "TheMens",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/themens/carnage/issues"
@@ -71,8 +71,8 @@
     "@types/puppeteer": "^5.4.1",
     "@types/sharp": "^0.28.4",
     "@types/ws": "^7.4.6",
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "@typescript-eslint/parser": "^4.28.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
     "commitizen": "^4.2.4",
     "concurrently": "^6.2.0",
     "conventional-changelog-cli": "^2.1.1",
