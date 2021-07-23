@@ -9,7 +9,7 @@
     "build:docs": "typedoc && git add docs/*",
     "build:jsQR": "cd src/lib/jsQR/ && gulp",
     "build:middleware": "cd src/lib/middleware/ && webpack",
-    "build:venom": "tsc",
+    "build:carnage": "tsc",
     "build:wapi": "cd src/lib/wapi/ && webpack",
     "build": "npm run build:wapi && npm run build:middleware && npm run build:jsQR && npm run build:counter && npm run build:carnage",
     "changelog:last": "conventional-changelog -p angular -r 2",
