@@ -1,6 +1,6 @@
 {
   "name": "carnage-bot",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Carnage is a high-performance system developed with JavaScript to create a bot for WhatsApp, support for creating any interaction, such as customer service, media sending, sentence recognition based on artificial intelligence and all types of design architecture for WhatsApp. ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -53,7 +53,7 @@
     "automatization",
     "puppeteer"
   ],
-  "author": "TheMens",
+  "author": "Themens",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/themens/carnage/issues"
@@ -61,6 +61,15 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    ".env",
+    "dist/*",
+    "package.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md"
+  ],
   "homepage": "https://github.com/themens/carnage#readme",
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
@@ -99,8 +108,10 @@
     "atob": "^2.1.2",
     "axios": "^0.21.0",
     "boxen": "^5.0.1",
-    "chalk": "^4.1.1",
+    "catch-exit": "^1.1.0",
+    "chalk": "^4.0.0",
     "chrome-launcher": "^0.14.0",
+    "dotenv": "^10.0.0",
     "futoin-hkdf": "^1.4.2",
     "latest-version": "^5.1.0",
     "mime-types": "^2.1.31",
@@ -109,9 +120,11 @@
     "puppeteer-extra": "^3.1.18",
     "puppeteer-extra-plugin-stealth": "^2.7.8",
     "qrcode-terminal": "^0.12.0",
+    "sanitize-filename": "^1.6.3",
     "sharp": "^0.28.3",
     "spinnies": "^0.5.1",
     "tree-kill": "^1.2.2",
+    "winston": "^3.3.3",
     "yoo-hoo": "^1.2.0"
   },
   "optionalDependencies": {
