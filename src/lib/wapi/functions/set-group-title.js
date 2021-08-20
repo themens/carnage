@@ -52,121 +52,37 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMNMNMMMNMMNNMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 */
-import { Browser, BrowserContext, LaunchOptions, Page } from 'puppeteer';
 
-import { Logger } from 'winston';
-
-import { defaultLogger } from '../utils/logger';
-
-import { puppeteerConfig } from './puppeteer.config';
-
-// Server config
-export interface CreateConfig {
-  /** folder name when saving tokens
-   * @default 'tokens'
-   */
-  folderNameToken?: string;
-  /**
-   * folder directory tokens, just inside the carnage folder, example:  { mkdirFolderToken: '/node_modules', } //will save the tokens folder in the node_modules directory
-   */
-  mkdirFolderToken?: string;
-  /**
-   * Headless chrome
-   * @default true
-   */
-  headless?: boolean;
-  /**
-   * Open devtools by default
-   * @default false
-   */
-  devtools?: boolean;
-  /**
-   * If false will use Chromium instance
-   * @default true
-   */
-  useChrome?: boolean;
-  /**
-   * Opens a debug session
-   * @default false
-   */
-  debug?: boolean;
-  /**
-   * If you want to use browserWSEndpoint
-   */
-  browserWS?: string;
-  /**
-   * Parameters to be added into the chrome browser instance
-   */
-  browserArgs?: string[];
-  /**
-   * Will be passed to puppeteer.launch
-   */
-  puppeteerOptions?: LaunchOptions;
-  /**
-   * Pass a external browser instance, can be used with electron
-   */
-  browser?: Browser | BrowserContext;
-  /**
-   * Pass a external page instance, can be used with electron
-   */
-  page?: Page;
-  /**
-   * Logs QR automatically in terminal
-   * @default true
-   */
-  logQR?: boolean;
-  /**
-   * Will disable Spinnies animation, useful for containers (docker) for a better log
-   * @default false
-   */
-  disableSpins?: boolean;
-  /**
-   * Will disable the welcoming message which appears in the beginning
-   * @default false
-   */
-  disableWelcome?: boolean;
-  /**
-   * Logs info updates automatically in terminal
-   * @default true
-   */
-  updatesLog?: boolean;
-  /**
-   * Automatically closes the carnage-bot only when scanning the QR code (default 60000 miliseconds, if you want to turn it off, assign 0 or false)
-   * @default 60000
-   */
-  autoClose?: number;
-  /**
-   * Creates a folder when inserting an object in the client's browser, to work it is necessary to pass the parameters in the function create browserSessionToken
-   * @default true
-   */
-  createPathFileToken?: boolean;
-  /**
-   * Wait for in chat to return a instance of {@link Whatsapp}
-   * @default false
-   */
-  waitForLogin?: boolean;
-  /**
-   * Wait for in chat to return a instance of {@link Whatsapp}
-   * @default false
-   */
-  logger?: Logger;
+/**
+ * Parameters to change group title
+ * @param {string} groupId group number
+ * @param {string} title group name
+ */
+export async function setGroupTitle(groupId, title) {
+  if (typeof title != 'string' || title.length === 0) {
+    return WAPI.scope(
+      undefined,
+      true,
+      null,
+      'It is necessary to write a text!'
+    );
+  }
+  const chat = await WAPI.sendExist(groupId);
+  if (chat && chat.status != 404) {
+    const m = { type: 'setGroupTitle', title };
+    const To = await WAPI.getchatId(chat.id);
+    return window.Store.GroupTitle.sendSetGroupSubject(chat.id, title)
+      .then(() => {
+        const obj = WAPI.scope(To, false, 'OK', title);
+        Object.assign(obj, m);
+        return obj;
+      })
+      .catch(() => {
+        const obj = WAPI.scope(To, true, 'error', title);
+        Object.assign(obj, m);
+        return obj;
+      });
+  } else {
+    return chat;
+  }
 }
-export const defaultOptions: CreateConfig = {
-  folderNameToken: 'tokens',
-  mkdirFolderToken: '',
-  headless: true,
-  devtools: false,
-  useChrome: true,
-  debug: false,
-  logQR: true,
-  browserWS: '',
-  browserArgs: puppeteerConfig.chromiumArgs,
-  puppeteerOptions: {},
-  disableSpins: false,
-  disableWelcome: false,
-  updatesLog: true,
-  autoClose: 120000,
-  createPathFileToken: true,
-  waitForLogin: true,
-  logger: defaultLogger
-};

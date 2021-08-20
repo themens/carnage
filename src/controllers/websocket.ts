@@ -52,121 +52,47 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMNMNMMMNMMNNMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 */
-import { Browser, BrowserContext, LaunchOptions, Page } from 'puppeteer';
+import { ConnectionTransport } from 'puppeteer';
 
-import { Logger } from 'winston';
+import * as WebSocket from 'ws';
 
-import { defaultLogger } from '../utils/logger';
+export class WebSocketTransport implements ConnectionTransport {
+  static create(url: string, timeout?: number): Promise<WebSocketTransport> {
+    return new Promise((resolve, reject) => {
+      const ws = new WebSocket(url, [], {
+        perMessageDeflate: false,
+        maxPayload: 256 * 1024 * 1024, // 256Mb
+        handshakeTimeout: timeout
+      });
 
-import { puppeteerConfig } from './puppeteer.config';
+      ws.addEventListener('open', () => resolve(new WebSocketTransport(ws)));
+      ws.addEventListener('error', reject);
+    });
+  }
 
-// Server config
-export interface CreateConfig {
-  /** folder name when saving tokens
-   * @default 'tokens'
-   */
-  folderNameToken?: string;
-  /**
-   * folder directory tokens, just inside the carnage folder, example:  { mkdirFolderToken: '/node_modules', } //will save the tokens folder in the node_modules directory
-   */
-  mkdirFolderToken?: string;
-  /**
-   * Headless chrome
-   * @default true
-   */
-  headless?: boolean;
-  /**
-   * Open devtools by default
-   * @default false
-   */
-  devtools?: boolean;
-  /**
-   * If false will use Chromium instance
-   * @default true
-   */
-  useChrome?: boolean;
-  /**
-   * Opens a debug session
-   * @default false
-   */
-  debug?: boolean;
-  /**
-   * If you want to use browserWSEndpoint
-   */
-  browserWS?: string;
-  /**
-   * Parameters to be added into the chrome browser instance
-   */
-  browserArgs?: string[];
-  /**
-   * Will be passed to puppeteer.launch
-   */
-  puppeteerOptions?: LaunchOptions;
-  /**
-   * Pass a external browser instance, can be used with electron
-   */
-  browser?: Browser | BrowserContext;
-  /**
-   * Pass a external page instance, can be used with electron
-   */
-  page?: Page;
-  /**
-   * Logs QR automatically in terminal
-   * @default true
-   */
-  logQR?: boolean;
-  /**
-   * Will disable Spinnies animation, useful for containers (docker) for a better log
-   * @default false
-   */
-  disableSpins?: boolean;
-  /**
-   * Will disable the welcoming message which appears in the beginning
-   * @default false
-   */
-  disableWelcome?: boolean;
-  /**
-   * Logs info updates automatically in terminal
-   * @default true
-   */
-  updatesLog?: boolean;
-  /**
-   * Automatically closes the carnage-bot only when scanning the QR code (default 60000 miliseconds, if you want to turn it off, assign 0 or false)
-   * @default 60000
-   */
-  autoClose?: number;
-  /**
-   * Creates a folder when inserting an object in the client's browser, to work it is necessary to pass the parameters in the function create browserSessionToken
-   * @default true
-   */
-  createPathFileToken?: boolean;
-  /**
-   * Wait for in chat to return a instance of {@link Whatsapp}
-   * @default false
-   */
-  waitForLogin?: boolean;
-  /**
-   * Wait for in chat to return a instance of {@link Whatsapp}
-   * @default false
-   */
-  logger?: Logger;
+  private _ws: WebSocket;
+  onmessage?: (message: string) => void;
+  onclose?: () => void;
+
+  constructor(ws: WebSocket) {
+    this._ws = ws;
+    this._ws.addEventListener('message', (event) => {
+      if (this.onmessage) this.onmessage.call(null, event.data);
+    });
+    this._ws.addEventListener('close', () => {
+      if (this.onclose) this.onclose.call(null);
+    });
+    // Silently ignore all errors - we don't know what to do with them.
+    this._ws.addEventListener('error', () => {});
+    this.onmessage = null;
+    this.onclose = null;
+  }
+
+  send(message: string): void {
+    this._ws.send(message);
+  }
+
+  close(): void {
+    this._ws.close();
+  }
 }
-export const defaultOptions: CreateConfig = {
-  folderNameToken: 'tokens',
-  mkdirFolderToken: '',
-  headless: true,
-  devtools: false,
-  useChrome: true,
-  debug: false,
-  logQR: true,
-  browserWS: '',
-  browserArgs: puppeteerConfig.chromiumArgs,
-  puppeteerOptions: {},
-  disableSpins: false,
-  disableWelcome: false,
-  updatesLog: true,
-  autoClose: 120000,
-  createPathFileToken: true,
-  waitForLogin: true,
-  logger: defaultLogger
-};

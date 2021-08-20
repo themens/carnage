@@ -1,8 +1,18 @@
 import * as boxen from 'boxen';
+
 import * as chalk from 'chalk';
+
+const path = require('path');
+
+require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
+
+export const BRAND = process.env.NAME;
+
 import latestVersion from 'latest-version';
-import * as Spinnies from 'spinnies';
+
 import { yo } from 'yoo-hoo';
+
+import { defaultLogger as logger } from '../utils/logger';
 import { upToDate } from '../utils/semver';
 const { version } = require('../../package.json');
 
@@ -15,45 +25,34 @@ export function welcomeScreen() {
     return;
   }
   welcomeShown = true;
-  yo('CARNAGE', { color: 'cyan' });
+  console.log('\n\n');
+  yo(BRAND, { color: 'rainbow' });
   console.log('\n\n');
 }
 
-export async function checkUpdates(spinnies: Spinnies) {
+export async function checkUpdates() {
   // Check for updates if needed
   if (!updatesChecked) {
     updatesChecked = true;
-    spinnies.add('carnage-version-spinner', {
-      text: 'Checking for updates'
-    });
-    return await checkCarnageVersion(spinnies);
+    await checkCarnageVersion();
   }
 }
 
 /**
  * Checs for a new versoin of carnage and logs
  */
-async function checkCarnageVersion(spinnies: Spinnies) {
-  spinnies.update('carnage-version-spinner', { text: 'Checking for updates...' });
-  try {
-    await latestVersion('carnage-bot').then((latest) => {
-      if (upToDate(version, latest)) {
-        spinnies.succeed('carnage-version-spinner', {
-          text: "You're up to date"
-        });
-      } else {
-        spinnies.succeed('carnage-version-spinner', {
-          text: 'There is a new version available'
-        });
+async function checkCarnageVersion() {
+  logger.info('Checking for updates');
+  await latestVersion('carnage-pro')
+    .then((latest) => {
+      if (!upToDate(version, latest)) {
+        logger.info('There is a new version available');
         logUpdateAvailable(version, latest);
       }
+    })
+    .catch(() => {
+      logger.warn('Failed to check updates');
     });
-  } catch {
-    spinnies.fail('carnage-version-spinner', {
-      text: 'Unable to access: "https://www.npmjs.com", check your internet'
-    });
-    return false;
-  }
 }
 
 /**
@@ -64,12 +63,12 @@ async function checkCarnageVersion(spinnies: Spinnies) {
 function logUpdateAvailable(current: string, latest: string) {
   // prettier-ignore
   const newVersionLog =
-    `There is a new version of ${chalk.bold(`Carnage`)} ${chalk.gray(current)} ➜  ${chalk.bold.green(latest)}\n` +
-    `Update your package by running:\n\n` +
-    `${chalk.bold('\>')} ${chalk.blueBright('npm update carnage-bot')}`;
+      `There is a new version of ${chalk.bold(`carnage`)} ${chalk.gray(current)} ➜  ${chalk.bold.green(latest)}\n` +
+      `Update your package by running:\n\n` +
+      `${chalk.bold('\>')} ${chalk.blueBright('npm update carnage-pro')}`;
 
-  console.log(boxen(newVersionLog, { padding: 1 }));
-  console.log(
+  logger.info(boxen(newVersionLog, { padding: 1 }));
+  logger.info(
     `For more info visit: ${chalk.underline(
       'https://github.com/themens/carnage/blob/master/Update.md'
     )}\n`
